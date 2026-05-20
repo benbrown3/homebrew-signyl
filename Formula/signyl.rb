@@ -6,25 +6,25 @@ class Signyl < Formula
   desc "Conversational marketing intelligence CLI"
   homepage "https://signylgrowth.com"
   license "Proprietary"
-  version "0.1.12"
+  version "0.1.14"
 
   on_macos do
     if Hardware::CPU.arm?
       url "https://github.com/benbrown3/signyl-agent/releases/download/cli-v#{version}/signyl-#{version}-darwin-arm64.tar.gz"
-      sha256 "0630d2daacc56a989e8e3ab8c3e74079ffeae4254a2d7849fa1a815141b02c3a"
+      sha256 "68827ca4cb40223eab14a51fa16055e427eff31e81e710004109c0ef9f2005ed"
     else
       url "https://github.com/benbrown3/signyl-agent/releases/download/cli-v#{version}/signyl-#{version}-darwin-x64.tar.gz"
-      sha256 "847d832b2405627ddcaa3367d292ccd3c45b042e3f0c20f338eb5e37a19e3f98"
+      sha256 "8455381ef78b605164bbdff3d38c9608bd255077e8aa66e20dba42e59765ed8b"
     end
   end
 
   on_linux do
     if Hardware::CPU.arm?
       url "https://github.com/benbrown3/signyl-agent/releases/download/cli-v#{version}/signyl-#{version}-linux-arm64.tar.gz"
-      sha256 "517bfb9f18be27802fab05ac0ae3f2c0a404f63121555b7d6d0782650f2b3fa1"
+      sha256 "2035accce5394364de36ecb152f7fe97a6cc16d07b95a0cb641533cc3d100295"
     else
       url "https://github.com/benbrown3/signyl-agent/releases/download/cli-v#{version}/signyl-#{version}-linux-x64.tar.gz"
-      sha256 "abff5d252386b9f4b5884c6ff9180e15357153c0a223646941cfeae0614fdc5e"
+      sha256 "0478686148d8951af9d2078589f364028dfdc1983d25cd3bfedd22beed59ec24"
     end
   end
 
